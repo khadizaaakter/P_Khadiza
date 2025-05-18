@@ -9,7 +9,7 @@ const About = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-1 items-center">
 
           {/* Left Side: Image */}
-          <div className="flex justify-center md:justify-start">
+          <div className="flex justify-center md:justify-center">
             <img
               src="/images/project1.png"
               alt="About Me"
