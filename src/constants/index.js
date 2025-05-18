@@ -1,5 +1,11 @@
+import { label } from "three/tsl";
+
 const navLinks = [
-    {
+  {
+    name: "About",
+    link: "#about",
+  },  
+  {
       name: "Work",
       link: "#work",
     },
@@ -34,6 +40,8 @@ const navLinks = [
     { value: 6, suffix: "+", label: "Completed Projects" },
     // { value: 90, suffix: "%", label: "Client Retention Rate" },
   ];
+
+
   
   const logoIconsList = [
     {

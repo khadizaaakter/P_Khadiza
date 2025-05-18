@@ -55,6 +55,8 @@ section {
     @apply xl:mt-20 md:mt-0 mt-40;
   }
 
+
+
   /* General Grids */
   .grid-base {
     @apply grid grid-cols-1;
