@@ -7,7 +7,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 const Hero = () => {
 
-    useGSAP(() =>{
+    useGSAP(() => {
         gsap.fromTo('.hero-text h1',
             {
                 y: 50,
@@ -19,7 +19,7 @@ const Hero = () => {
                 stagger: 0.2,
                 duration: 1,
                 ease: 'power2.inOut'
-            },     
+            },
         )
     })
 
@@ -34,7 +34,7 @@ const Hero = () => {
                 <header className='flex flex-col justify-center md:w-full w-screen md:px-20 px-5'>
                     <div className='flex flex-col gap-7'>
                         <div className='hero-text'>
-                            <h1>Transforming
+                            <h2>Transforming
                                 <span className="slide">
                                     <span className="wrapper">
                                         {
@@ -52,7 +52,7 @@ const Hero = () => {
                                         }
                                     </span>
                                 </span>
-                            </h1>
+                            </h2>
                             <h1>into results</h1>
                             <h1>that deliver value</h1>
                         </div>
@@ -66,6 +66,53 @@ const Hero = () => {
                             text="See my Work"
                         />
                     </div>
+                    {/* find me */}
+                    <div className="mt-4 px-5 md:px-2 text-start mb-15">
+                {/* <h3 className="text-white-50 font-semibold mb-6 uppercase tracking-widest">
+                    Find Me
+                </h3> */}
+
+                <div className="grid grid-cols-5 gap-1 max-w-sm">
+                    <a
+                        href="https://github.com/khadizaaakter"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="bg-white shadow-md w-14 h-14 flex items-center justify-center rounded-full transition-transform duration-300 hover:scale-105"
+                    >
+                        <img
+                            src="/images/logos/git.png"
+                            alt="GitHub"
+                            className="w-8 h-8"
+                        />
+                    </a>
+
+                    <a
+                        href="https://www.linkedin.com/in/yourusername/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="bg-white shadow-md w-14 h-14 flex items-center justify-center rounded-full transition-transform duration-300 hover:scale-105"
+                    >
+                        <img
+                            src="/images/logos/linkedin.png"
+                            alt="LinkedIn"
+                            className="w-8 h-8"
+                        />
+                    </a>
+
+                    <a
+                        href="https://www.facebook.com/yourusername"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="bg-white shadow-md w-14 h-14 flex items-center justify-center rounded-full transition-transform duration-300 hover:scale-105"
+                    >
+                        <img
+                            src="/images/logos/github (1).png"
+                            alt="Facebook"
+                            className="w-8 h-8"
+                        />
+                    </a>
+                </div>
+            </div>
                 </header>
                 {/*Right:3D model*/}
                 <figure>
@@ -74,7 +121,9 @@ const Hero = () => {
                     </div>
                 </figure>
             </div>
-            <AnimatedCounter/>
+            <AnimatedCounter />
+            {/* find me */}
+
         </section>
     )
 }

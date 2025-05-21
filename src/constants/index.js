@@ -17,10 +17,10 @@ const navLinks = [
       name: "Skills",
       link: "#skills",
     },
-    {
-      name: "Testimonials",
-      link: "#testimonials",
-    },
+    // {
+    //   name: "Testimonials",
+    //   link: "#testimonials",
+    // },
   ];
   
   const words = [
@@ -38,7 +38,7 @@ const navLinks = [
     { value: 1, suffix: "+", label: "Years of Experience" },
     { value: 2, suffix: "+", label: "Office Project" },
     { value: 6, suffix: "+", label: "Completed Projects" },
-    // { value: 90, suffix: "%", label: "Client Retention Rate" },
+    { value: 90, suffix: "%", label: "Client Retention Rate" },
   ];
 
 
