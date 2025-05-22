@@ -4,7 +4,7 @@ import GlowCard from '../components/GlowCard';
 const About = () => {
   return (
 
-    <div id="about" className="padding-x-lg xl:mt-34">
+    <div id="about" className="padding-x-lg xl:mt-34 ">
       <div className="bg-zinc-900 rounded-lg p-10 mt-8 mx-auto max-w-7xl">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-1 items-center">
 

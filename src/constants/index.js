@@ -81,17 +81,17 @@ const navLinks = [
   
   const abilities = [
     {
-      imgPath: "/images/seo.png",
+      imgPath: "/images/logos/graduation-cap.svg",
       title: "Quality Focus",
       desc: "Delivering high-quality results while maintaining attention to every detail.",
     },
     {
-      imgPath: "/images/chat.png",
+      imgPath: "/images/logos/school (3).svg",
       title: "Reliable Communication",
       desc: "Keeping you updated at every step to ensure transparency and clarity.",
     },
     {
-      imgPath: "/images/time.png",
+      imgPath: "/images/logos/school (1).svg",
       title: "On-Time Delivery",
       desc: "Making sure projects are completed on schedule, with quality & attention to detail.",
     },
