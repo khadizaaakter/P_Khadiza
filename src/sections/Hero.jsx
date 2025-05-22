@@ -73,7 +73,7 @@ const Hero = () => {
                                 href="https://github.com/khadizaaakter"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="bg-white w-12 h-12 rounded-full flex items-center justify-center shadow-md hover:scale-105 transition-transform duration-300"
+                                className="bg-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg hover:scale-105 transition-transform duration-300 hover:shadow-purple-500/50"
                             >
                                 <img
                                     src="/images/logos/git.png"
@@ -86,7 +86,7 @@ const Hero = () => {
                                 href="https://www.linkedin.com/in/yourusername/"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="bg-white w-12 h-12 rounded-full flex items-center justify-center shadow-md hover:scale-105 transition-transform duration-300"
+                                className="bg-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg hover:scale-105 transition-transform duration-300 hover:shadow-purple-500/50"
                             >
                                 <img
                                     src="/images/logos/linkedin.png"
@@ -99,7 +99,7 @@ const Hero = () => {
                                 href="https://www.facebook.com/yourusername"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="bg-white w-12 h-12 rounded-full flex items-center justify-center shadow-md hover:scale-105 transition-transform duration-300"
+                                className="bg-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg hover:scale-105 transition-transform duration-300 hover:shadow-purple-500/50"
                             >
                                 <img
                                     src="/images/logos/github (1).png"
