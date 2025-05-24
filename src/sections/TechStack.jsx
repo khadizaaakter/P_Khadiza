@@ -26,8 +26,8 @@ const TechStack = () => {
         <div id="skills" className="flex-center section-padding">
             <div className="w-full h-full md:px-11 px-5">
                 <TitleHeader
-                    title="Building With These Technologies"
-                    sub="Tech Stack I Work With"
+                    title="Technology Stack Behind My Work"
+                    sub="Preferred Tools & Technologies"
                 />
                 <div className="tech-grid">
                 {techStackImgs.map((techStackIcon, index) => (
