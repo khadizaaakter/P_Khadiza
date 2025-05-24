@@ -1,65 +1,48 @@
-import React, { useRef } from 'react';
+import React from 'react';
+import { motion } from 'framer-motion';
 import TitleHeader from '../components/TitleHeader';
 
 const About = () => {
-  const cardRef = useRef(null);
-
-  const handleMouseMove = (e) => {
-    const card = cardRef.current;
-    if (!card) return;
-
-    const rect = card.getBoundingClientRect();
-    const x = e.clientX - rect.left;
-    const y = e.clientY - rect.top;
-
-    card.style.setProperty('--x', `${x}px`);
-    card.style.setProperty('--y', `${y}px`);
-  };
-
   return (
-    <div id="about" className="padding-x-lg xl:mt-34">
-      <div className="w-full h-full md:px-20 px-5">
-        <TitleHeader title="About Me" sub="💻 Career Objective" />
+    <div id="about" className="px-5 md:px-10 pt-10 xl:pt-10 max-w-7xl mx-auto">
+      {/* Responsive TitleHeader with bottom margin */}
+      <div className="mb-10 mt-10 md:mt-16">
+        <TitleHeader title="About Me" sub="🚀 Career Objective" />
       </div>
 
-      {/* Glow card wrapper */}
-      <div
-        ref={cardRef}
-        onMouseMove={handleMouseMove}
-        className="relative group rounded-xl p-[2px] mt-8 mx-auto max-w-7xl transition-transform duration-300"
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+        className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center bg-gradient-to-br from-zinc-900 to-zinc-800 rounded-xl p-8 md:p-10 shadow-lg relative overflow-hidden"
       >
-        {/* White glow effect on hover */}
-        <div
-          className="absolute inset-0 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-0"
-          style={{
-            background:
-              'radial-gradient(500px circle at var(--x, var(--y)), rgba(255, 255, 255, 0.6), transparent)',
-          }}
-        ></div>
+        {/* Decorative Glow Effects */}
+        <div className="absolute -top-10 -left-10 w-64 h-64 bg-purple-500 opacity-20 rounded-full blur-3xl pointer-events-none"></div>
+        <div className="absolute -bottom-10 -right-10 w-64 h-64 bg-cyan-500 opacity-20 rounded-full blur-3xl pointer-events-none"></div>
 
-        {/* Card content */}
-        <div className="relative z-10 bg-zinc-900 rounded-xl p-10 grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
-          {/* Image side */}
-          <div className="flex justify-center">
-            <img
-              src="/images/project1.png"
-              alt="About Me"
-              className="w-64 h-64 object-cover rounded-2xl shadow-lg"
-            />
-          </div>
+        {/* Image Section */}
+        <motion.img
+          src="/images/project1.png"
+          alt="Profile"
+          initial={{ scale: 0.9, opacity: 0 }}
+          whileInView={{ scale: 1, opacity: 1 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          className="rounded-2xl w-64 h-64 object-cover shadow-md mx-auto md:mx-0"
+        />
 
-          {/* Text content */}
-          <div>
-            <p className="text-lg leading-relaxed text-white/80 text-center md:text-left">
-              I'm a passionate and detail-oriented web developer specializing in Laravel, Vue.js, and SQL.
-              Currently working at ACI Limited, I support and manage database systems for one of Bangladesh’s
-              leading retail businesses. With hands-on experience in backend development, database optimization,
-              and project documentation, I enjoy turning ideas into functional, user-friendly applications.
-              I'm always eager to learn, collaborate, and build solutions that create real impact.
-            </p>
-          </div>
+        {/* Text Section */}
+        <div className="text-white space-y-3 text-center md:text-left">
+          <h2 className="text-2xl md:text-3xl font-bold">I'm a Web Developer Based in Bangladesh</h2>
+          <p className="text-base md:text-lg text-white/80 leading-relaxed">
+            At <span className="text-orange-400 font-semibold">ACI Limited</span>, I specialize in backend development with 
+            <span className="text-teal-400 font-medium"> Laravel</span>, <span className="text-teal-400 font-medium">Vue.js</span>, and SQL. I manage and support retail-focused systems for one of the country's top enterprises.
+          </p>
+          <p className="text-base md:text-lg text-white/80 leading-relaxed">
+            I enjoy transforming business logic into scalable code, building smooth user experiences, and learning emerging technologies. I'm driven by innovation and committed to delivering quality with precision.
+          </p>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

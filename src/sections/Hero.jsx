@@ -77,7 +77,7 @@ const Hero = () => {
                                 className="bg-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg hover:scale-105 transition-transform duration-300 hover:shadow-purple-500/50"
                             >
                                 <img
-                                    src="/images/logos/git.png"
+                                    src="/images/logos/github (1).png"
                                     alt="GitHub"
                                     className="w-6 h-6"
                                 />
@@ -103,7 +103,7 @@ const Hero = () => {
                                 className="bg-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg hover:scale-105 transition-transform duration-300 hover:shadow-purple-500/50"
                             >
                                 <img
-                                    src="/images/logos/github (1).png"
+                                    src="/images/logos/git.png"
                                     alt="Facebook"
                                     className="w-6 h-6"
                                 />
