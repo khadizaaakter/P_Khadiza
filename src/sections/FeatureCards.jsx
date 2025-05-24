@@ -18,7 +18,7 @@ const FeatureCards = () => {
   };
 
   return (
-    <div id="education" className="xl:mt-14">
+    <div id="education" className="xl:mt-13">
       <div className="w-full h-full md:px-20 px-5 mb-10">
         <TitleHeader sub="👩🏻‍🎓 My Academic Journey" />
       </div>

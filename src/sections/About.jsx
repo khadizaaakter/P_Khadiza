@@ -18,7 +18,7 @@ const About = () => {
         className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center bg-gradient-to-br from-zinc-900 to-zinc-800 rounded-xl p-8 md:p-10 shadow-lg relative overflow-hidden"
       >
         {/* Decorative Glow Effects */}
-        <div className="absolute -top-10 -left-10 w-64 h-64 bg-purple-500 opacity-20 rounded-full blur-3xl pointer-events-none"></div>
+        <div className="absolute -top-10 -left-10 w-64 h-64 opacity-20 rounded-full blur-3xl pointer-events-none"></div>
         <div className="absolute -bottom-10 -right-10 w-64 h-64 bg-cyan-500 opacity-20 rounded-full blur-3xl pointer-events-none"></div>
 
         {/* Image Section */}
@@ -35,7 +35,7 @@ const About = () => {
         <div className="text-white space-y-3 text-center md:text-left">
           <h2 className="text-2xl md:text-3xl font-bold">I'm a Web Developer Based in Bangladesh</h2>
           <p className="text-base md:text-lg text-white/80 leading-relaxed">
-            At <span className="text-orange-400 font-semibold">ACI Limited</span>, I specialize in backend development with 
+            At <span className="text-purple-300 font-semibold">ACI Limited</span>, I specialize in backend development with 
             <span className="text-teal-400 font-medium"> Laravel</span>, <span className="text-teal-400 font-medium">Vue.js</span>, and SQL. I manage and support retail-focused systems for one of the country's top enterprises.
           </p>
           <p className="text-base md:text-lg text-white/80 leading-relaxed">

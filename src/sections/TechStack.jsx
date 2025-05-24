@@ -24,7 +24,7 @@ const TechStack = () => {
 
     return (
         <div id="skills" className="flex-center section-padding">
-            <div className="w-full h-full md:px-11 px-5">
+            <div className="w-full h-full md:px-11 px-5 mb-10 mt-10 md:mt-9">
                 <TitleHeader
                     title="Technology Stack Behind My Work"
                     sub="Preferred Tools & Technologies"
