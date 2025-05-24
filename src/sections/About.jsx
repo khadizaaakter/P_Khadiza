@@ -26,7 +26,7 @@ const About = () => {
       <div
         ref={cardRef}
         onMouseMove={handleMouseMove}
-        className="relative group rounded-xl p-[2px] mt-8 mx-auto max-w-7xl transition-transform duration-300 hover:scale-[1.01]"
+        className="relative group rounded-xl p-[2px] mt-8 mx-auto max-w-7xl transition-transform duration-300"
       >
         {/* White glow effect on hover */}
         <div
