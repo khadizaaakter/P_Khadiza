@@ -199,7 +199,7 @@ const navLinks = [
       imgPath: "/images/exp2.png",
       logoPath: "/images/logo2.png",
       title: "Software Engineer Intern",
-      date: "March 2024 - June 2024",
+      date: "March 2024 - June 2024  |   ACI LIMITED",
       responsibilities: [
         "Successfully delivered a complete project from start to finish.",
         "Provided valuable support to my supervisor in daily technical tasks.",
