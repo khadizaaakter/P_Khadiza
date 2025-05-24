@@ -10,6 +10,10 @@ const navLinks = [
       link: "#work",
     },
     {
+      name: "Education",
+      link: "#education",
+    },
+    {
       name: "Experience",
       link: "#experience",
     },
@@ -83,17 +87,17 @@ const navLinks = [
     {
       imgPath: "/images/logos/graduation-cap.svg",
       title: "Interational University of Business Agriculture & Technology",
-      desc: "2020 - 2024",
+      desc: "🗓️ 2020 - 2024 |  CSE",
     },
     {
       imgPath: "/images/logos/school (3).svg",
       title: "Rajdhani Ideal College",
-      desc: "2019",
+      desc: "🗓️ 2019    |    Science",
     },
     {
       imgPath: "/images/logos/school (1).svg",
       title: "Rajdhani Ideal School",
-      desc: "2027",
+      desc: "🗓️ 2017 | Science",
     },
   ];
   
