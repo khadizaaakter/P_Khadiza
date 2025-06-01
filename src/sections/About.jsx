@@ -4,7 +4,7 @@ import TitleHeader from '../components/TitleHeader';
 
 const About = () => {
   return (
-    <div id="about" className="px-5 md:px-10 pt-10 xl:pt-10 max-w-7xl mx-auto">
+    <div id="about" className="px-5 md:px-18 pt-10 xl:pt-10 max-w-8xl mx-auto">
       {/* Responsive TitleHeader with bottom margin */}
       <div className="mb-10 mt-10 md:mt-16">
         <TitleHeader title="About Me" sub="🚀 Career Objective" />

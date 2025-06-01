@@ -108,7 +108,9 @@ const Contact = () => {
           </div>
           <div className="xl:col-span-7 min-h-96">
             <div className="bg-[#cd7c2e] w-full h-full hover:cursor-grab rounded-3xl overflow-hidden">
-              <ContactExperience/>
+              {/* <ContactExperience/> */}
+              <img
+              src="public/images/logos/contact-image.jpg"/>
             </div>
           </div>
         </div>
