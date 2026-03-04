@@ -61,10 +61,12 @@ const Hero = () => {
                             Hi, I'm Khadiza — a Laravel
                             developer who enjoys building websites.
                         </p>
+                        {/* Your CV: public/cv.jfif (image). For a PDF, add public/cv.pdf and use href="/cv.pdf" + download="Khadiza_Akter_CV.pdf" */}
                         <Button
                             className="md:w-80 md:h-16 w-60 h-12"
-                            id="button"
                             text="Download CV"
+                            href="/cv.jfif"
+                            download="Khadiza_Akter_CV.jpg"
                         />
                     </div>
                     {/* find me */}
@@ -111,8 +113,8 @@ const Hero = () => {
                         </div>
                     </div>
                 </header>
-                {/*Right:3D model*/}
-                <figure>
+                {/* Right: circle + particles — responsive at all breakpoints */}
+                <figure className="hero-figure">
                     <div className="hero-3d-layout">
                         <HeroExperience />
                     </div>

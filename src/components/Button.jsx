@@ -1,16 +1,22 @@
-const Button = ({ text, className, id }) => {
+const Button = ({ text, className, id, href, download }) => {
+  const isDownloadLink = Boolean(href);
+
   return (
     <a
+      href={isDownloadLink ? href : undefined}
+      download={isDownloadLink ? (download ?? true) : undefined}
       onClick={(e) => {
+        if (isDownloadLink) return; // let browser handle download
         e.preventDefault();
-        const target = document.getElementById('counter')
+        const target = document.getElementById('counter');
         if (target && id) {
           const offset = window.innerHeight * 0.15;
           const top = target.getBoundingClientRect().top + window.scrollY - offset;
-          window.scrollTo({ top, behavior: 'smooth' })
+          window.scrollTo({ top, behavior: 'smooth' });
         }
       }}
-      className={`${className ?? ''} cta-wrapper`}>
+      className={`${className ?? ''} cta-wrapper`}
+    >
       <div className="cta-button group">
         <div className="bg-circle" />
         <p className="text">{text}</p>
@@ -19,7 +25,7 @@ const Button = ({ text, className, id }) => {
         </div>
       </div>
     </a>
-  )
-}
+  );
+};
 
 export default Button

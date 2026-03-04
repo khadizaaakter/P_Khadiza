@@ -1,37 +1,36 @@
-import { OrbitControls } from '@react-three/drei';
 import { Canvas } from '@react-three/fiber';
-import { useMediaQuery } from 'react-responsive';
-import { Room } from './Room';
-
 import HeroLights from './HeroLights';
 import Particles from './Particals';
 
 const HeroExperience = () => {
-  const isTablet = useMediaQuery({ query: '(max-width: 1024px)' });
-  const isMobile = useMediaQuery({ query: '(max-width: 768px)' });
   return (
-    <Canvas camera={{ position: [0, 0, 15], fov: 45 }}>
+    <div className="relative w-full h-full">
+      <Canvas camera={{ position: [0, 0, 15], fov: 45 }}>
+        <HeroLights />
+        <Particles count={100} />
+      </Canvas>
 
-      <OrbitControls
-        enablePan={false}
-        enableZoom={!isTablet}
-        maxDistance={20}
-        minDistance={5}
-        minPolarAngle={Math.PI / 5}
-        maxPolarAngle={Math.PI / 2}
-      />
-      <HeroLights />
-      <Particles count={100}/>
-      <group scale={isMobile ? 0.7 : 1}
-        position={[0, -3.5, 0]}
-        rotation={[0, Math.PI / 4, 0]}>
-        <Room />
-      </group>
-
-    </Canvas>
-
-
-  )
-}
+      {/* Your image in a responsive circle (on top of particles); on mobile circle sits lower */}
+      <div className="hero-circle-wrap">
+        <div className="hero-circle-ring">
+          <div className="hero-circle-inner">
+            <img
+              src="/hero-avatar.jpg"
+              alt="Khadiza Akter"
+              className="hero-circle-img"
+              width={320}
+              height={320}
+              loading="eager"
+              onError={(e) => {
+                e.target.onerror = null;
+                e.target.src = '/IMG-20250628-WA0007.jpg';
+              }}
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
 
 export default HeroExperience
